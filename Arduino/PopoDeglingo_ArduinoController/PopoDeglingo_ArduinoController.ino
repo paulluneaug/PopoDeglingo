@@ -3,7 +3,21 @@
 #include <SPI.h>
 
 #pragma region Variables & Constantes
-
+/* Descriptions pins globale
+ * 2 : SS (SDA) du lecteur RFC 1.
+ * 3 et 4 : MOSI et MISO du lecteur RFC 1.
+ * 5 : Pin Reset (RST) partagé entre tous les lecteurs RFC. 
+ * 6 : SS (SDA) du lecteur RFC 2.
+ * 7 et 8 : MOSI et MISO du lecteur RFC 2.
+ * 9 : Pin SCK (Serial Clock) partagé entre tous les lecteurs RFC.
+ * 10 : SS (SDA) du lecteur RFC 3.
+ * 11 et 12 : MOSI et MISO du lecteur RFC 3.
+ * 13 :
+ * A0 : Bouton 1 = Previous Grimoire.
+ * A1 : Bouton 2 = Next Grimoire.
+ * A2 : Bouton 3 = Replay les son de la commande du client.
+ * A3 : Bouton 4 = Play le son de la recette du Grimoire.
+ */
 // Objet simulant les appuis de bouton sur un contrôleur.
 Joystick_ joystick {};
 // Objets de gestion des lecteurs RFC.
@@ -13,7 +27,6 @@ MFRC522 rfcReaders[] =
   MFRC522(6, 5),
   MFRC522(10, 5)
 };
-
 const int NB_RFC_READERS = 3;
 String nfcTags[] {"","",""};
 
