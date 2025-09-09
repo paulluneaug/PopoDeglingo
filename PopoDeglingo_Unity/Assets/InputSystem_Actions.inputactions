@@ -47,6 +47,17 @@
                 },
                 {
                     "name": "",
+                    "id": "d292e046-8958-4057-9cd5-5760d59c6c83",
+                    "path": "<HID::Arduino LLC Arduino Leonardo>/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grimoire_NextPage",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "12967e1a-e25b-45e4-997f-34d632f8baf3",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
@@ -58,8 +69,30 @@
                 },
                 {
                     "name": "",
+                    "id": "8d4e6556-d895-4dfe-bc51-a509a69e6aea",
+                    "path": "<HID::Arduino LLC Arduino Leonardo>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grimoire_PreviousPage",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "3c4b3d17-390a-4406-9f2c-18a03aefe0db",
                     "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grimoire_RepeatPage",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7e12cda5-cfaf-43f5-aa5f-46144b6f1f2c",
+                    "path": "<HID::Arduino LLC Arduino Leonardo>/button4",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
