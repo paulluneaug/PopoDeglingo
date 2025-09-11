@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf34bac6eea9764c9dd632516e3c0ba, type: 3}
+  m_Name: Prevot
+  m_EditorClassIdentifier: 
+  ID: 12
+  CharacterName: Prevot
+  CharacterSprite: {fileID: 2575966596581722498, guid: 665e6ad590b76bd4684145dd746adf9e, type: 3}
+  retryIfNotGood: 0
+  resetTimerOnLeave: 0
+  introDialogs:
+  - subtitles: Ils planquent de mieux en mieux leur richesse.
+    clip: {fileID: 8300000, guid: c1a0081621e093c4a9dd3c19b7b00b3c, type: 3}
+  potionDialog:
+    subtitles: "Il me faut\u2026 un d\xE9lieur de langue"
+    clip: {fileID: 8300000, guid: 9c1b69cab922d5f4aa9fbe184b15da28, type: 3}
+  notAPotionDialog:
+  - subtitles: Boom !
+    clip: {fileID: 8300000, guid: 332ccfef2dd14d1409af3453c4ba5964, type: 3}
+  wrongPotionDialog:
+  - subtitles: "Vous cherchez \xE0 les couvrir pas vrai ?"
+    clip: {fileID: 8300000, guid: 6bdffb38e5039254f9d91692416c0b5d, type: 3}
+  goodPotionDialog:
+  - subtitles: "Je sens que la r\xE9colte va \xEAtre bonne ce mois-ci"
+    clip: {fileID: 8300000, guid: 210f05feb5b45984995b235a8505a630, type: 3}
+  linkedRecipe: {fileID: 11400000, guid: 7304cbf23402aea4db20746f979294cf, type: 2}

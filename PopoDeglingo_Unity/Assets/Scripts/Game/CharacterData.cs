@@ -9,10 +9,14 @@ public class CharacterData : ScriptableObject
 	public int ID;
 	public string CharacterName;
 	public Sprite CharacterSprite;
+	public bool retryIfNotGood;
+	public bool resetTimerOnLeave;
 	public DialogData[] introDialogs;
-	public DialogData[] notAPotionDialogs;
-	public DialogData[] wrongPotionDialogs;
-	public DialogData[] goodPotionDialogs;
+	public DialogData potionDialog;
+	public DialogData[] notAPotionDialog;
+	public DialogData[] wrongPotionDialog;
+	public DialogData[] goodPotionDialog;
+	public PotionRecipe linkedRecipe;
 
 	/// <summary>
 	/// Represents a dialog's data

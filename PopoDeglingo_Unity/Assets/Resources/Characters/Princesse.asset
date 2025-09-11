@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf34bac6eea9764c9dd632516e3c0ba, type: 3}
+  m_Name: Princesse
+  m_EditorClassIdentifier: 
+  ID: 13
+  CharacterName: Princesse
+  CharacterSprite: {fileID: 283988907511131584, guid: ff0d6623e43c3534f8ff10cbab49c498, type: 3}
+  retryIfNotGood: 0
+  resetTimerOnLeave: 0
+  introDialogs:
+  - subtitles: "Hmph, quelle odeur\u2026 J\u2019aurais d\xFB envoyer l\u2019un de
+      mes domestiques\u2026"
+    clip: {fileID: 8300000, guid: c1ea6b4689140a54a81c699c1dbcd1f1, type: 3}
+  potionDialog:
+    subtitles: "Toi, larbin, il me faudrait\u2026 la larme de caillou. J\u2019ai
+      de quoi payer"
+    clip: {fileID: 8300000, guid: b9bc1b9bac919e94f917aaee399fc7a8, type: 3}
+  notAPotionDialog:
+  - subtitles: Boom !
+    clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
+  wrongPotionDialog:
+  - subtitles: "Mon p\xE8re en entendra parler ! J\u2019aurai votre t\xEAte !"
+    clip: {fileID: 8300000, guid: 2484e02e23999a047b8ac076c402ba3a, type: 3}
+  goodPotionDialog:
+  - subtitles: "Mouai, c\u2019est passable. Vous ne m\u2019avez pas vu"
+    clip: {fileID: 8300000, guid: ed81e64b863f8f449bd5a5b71a848b44, type: 3}
+  linkedRecipe: {fileID: 11400000, guid: 21aafce2432b07644b4650ef74150c6a, type: 2}

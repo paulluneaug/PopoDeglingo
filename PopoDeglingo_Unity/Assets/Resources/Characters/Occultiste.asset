@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf34bac6eea9764c9dd632516e3c0ba, type: 3}
+  m_Name: Occultiste
+  m_EditorClassIdentifier: 
+  ID: 10
+  CharacterName: Occultiste
+  CharacterSprite: {fileID: 283988907511131584, guid: ff0d6623e43c3534f8ff10cbab49c498, type: 3}
+  retryIfNotGood: 0
+  resetTimerOnLeave: 0
+  introDialogs:
+  - subtitles: "J\u2019ai d\xE9j\xE0 broy\xE9 mes crocs de serpent et coup\xE9 mes
+      grenouilles en lamelles."
+    clip: {fileID: 8300000, guid: caf3631b35627ad418055a7d5f33e2e9, type: 3}
+  potionDialog:
+    subtitles: " Il ne manque plus que\u2026 la larme de caillou."
+    clip: {fileID: 8300000, guid: 1f705ce3fae383d4aac1f207e5714039, type: 3}
+  notAPotionDialog:
+  - subtitles: Boom !
+    clip: {fileID: 8300000, guid: 332ccfef2dd14d1409af3453c4ba5964, type: 3}
+  wrongPotionDialog:
+  - subtitles: "Vos descendants vont vous ha\xEFr."
+    clip: {fileID: 8300000, guid: 775db8cedf35d104cae0cd00cc91c23b, type: 3}
+  goodPotionDialog:
+  - subtitles: "Il va regretter de ne pas avoir utilis\xE9 de la pierre pour construire
+      son foyer."
+    clip: {fileID: 8300000, guid: 50f5221df1d5b144ebddbdbfe12125dc, type: 3}
+  linkedRecipe: {fileID: 11400000, guid: 21aafce2432b07644b4650ef74150c6a, type: 2}

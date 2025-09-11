@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf34bac6eea9764c9dd632516e3c0ba, type: 3}
+  m_Name: Magistrat
+  m_EditorClassIdentifier: 
+  ID: 9
+  CharacterName: Magistrat
+  CharacterSprite: {fileID: 2575966596581722498, guid: 665e6ad590b76bd4684145dd746adf9e, type: 3}
+  retryIfNotGood: 0
+  resetTimerOnLeave: 0
+  introDialogs:
+  - subtitles: "Mes derniers jugements ne font pas l\u2019unanimit\xE9. Ces bouseux
+      m\u2019envoient des menaces sans arr\xEAt."
+    clip: {fileID: 8300000, guid: ce2934448bad649418dfa497ab442a91, type: 3}
+  potionDialog:
+    subtitles: "Il me faut\u2026 un d\xE9lieur de langue."
+    clip: {fileID: 8300000, guid: d36d510ae8a0faa4abdc5d9cbd063ae0, type: 3}
+  notAPotionDialog:
+  - subtitles: Boom !
+    clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
+  wrongPotionDialog:
+  - subtitles: "Vous cherchez \xE0 les aider ma parole !"
+    clip: {fileID: 8300000, guid: ab239bcdfefd2844393a14cad2609dd7, type: 3}
+  goodPotionDialog:
+  - subtitles: "J\u2019esp\xE8re que \xE7a va les d\xE9courager, ils sont tenaces."
+    clip: {fileID: 8300000, guid: 71e8ef2717e5f0641b14112b9db4ad13, type: 3}
+  linkedRecipe: {fileID: 11400000, guid: 7304cbf23402aea4db20746f979294cf, type: 2}

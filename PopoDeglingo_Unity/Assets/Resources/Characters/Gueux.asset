@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf34bac6eea9764c9dd632516e3c0ba, type: 3}
+  m_Name: Gueux
+  m_EditorClassIdentifier: 
+  ID: 7
+  CharacterName: Gueux
+  CharacterSprite: {fileID: 283988907511131584, guid: ff0d6623e43c3534f8ff10cbab49c498, type: 3}
+  retryIfNotGood: 0
+  resetTimerOnLeave: 0
+  introDialogs:
+  - subtitles: Jacquerie ! Mes champs meurent et le roi ne fait rien !
+    clip: {fileID: 8300000, guid: 11be9b61793979f4b8d65a43f77797fb, type: 3}
+  potionDialog:
+    subtitles: "Il me faut\u2026 du feu minute"
+    clip: {fileID: 8300000, guid: a72d71e5423c45f419e9da3e532bc301, type: 3}
+  notAPotionDialog:
+  - subtitles: Boom !
+    clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
+  wrongPotionDialog:
+  - subtitles: "Quoi ? Je ne peux rien faire avec \xE7a ! Faites mieux, la prochaine
+      fois !"
+    clip: {fileID: 8300000, guid: ba95932b323d60249aa161b1b1504280, type: 3}
+  goodPotionDialog:
+  - subtitles: "Avec \xE7a, la citadelle tombera ! JACQUERIE !"
+    clip: {fileID: 8300000, guid: 12ebdf62b4db7364e899cbad3d4fc9cd, type: 3}
+  linkedRecipe: {fileID: 11400000, guid: 16796603fc5905f4e91720e37b1c3791, type: 2}

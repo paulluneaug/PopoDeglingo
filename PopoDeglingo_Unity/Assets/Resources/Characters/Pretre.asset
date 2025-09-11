@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf34bac6eea9764c9dd632516e3c0ba, type: 3}
+  m_Name: Pretre
+  m_EditorClassIdentifier: 
+  ID: 11
+  CharacterName: Pretre
+  CharacterSprite: {fileID: -3558552238673493281, guid: 04c88b11ebed26e4d9b828dd9c232dff, type: 3}
+  retryIfNotGood: 0
+  resetTimerOnLeave: 0
+  introDialogs:
+  - subtitles: Que le Seigneur soit avec vous !
+    clip: {fileID: 8300000, guid: fa11279f5dcf7bd4db000fd22a1be027, type: 3}
+  potionDialog:
+    subtitles: "Pour l\u2019amour de Dieu, je souhaiterai obtenir du r\xE9veil mort "
+    clip: {fileID: 8300000, guid: 2949c81d15e974141aa845889c734224, type: 3}
+  notAPotionDialog:
+  - subtitles: Boom !
+    clip: {fileID: 8300000, guid: 332ccfef2dd14d1409af3453c4ba5964, type: 3}
+  wrongPotionDialog:
+  - subtitles: " Soyez consum\xE9 dans les flammes de l\u2019enfer, malin ! Vous
+      ne m\xE9ritez pas sa lumi\xE8re divine !"
+    clip: {fileID: 8300000, guid: 43877dfb205d67246b4e9bf4b197f62c, type: 3}
+  goodPotionDialog:
+  - subtitles: "Puisse t-il vous b\xE9nir, \xD4 sainte personne ! Vous serez dans
+      mes pri\xE8res. "
+    clip: {fileID: 8300000, guid: a6a0a3383a884104ab625f705733ad2f, type: 3}
+  linkedRecipe: {fileID: 11400000, guid: c4ad307b2b4a0f041ab041d972266880, type: 2}

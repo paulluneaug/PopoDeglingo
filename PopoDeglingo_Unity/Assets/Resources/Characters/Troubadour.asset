@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf34bac6eea9764c9dd632516e3c0ba, type: 3}
+  m_Name: Troubadour
+  m_EditorClassIdentifier: 
+  ID: 15
+  CharacterName: Troubadour
+  CharacterSprite: {fileID: -5198404524020431775, guid: aea930e4236a1a6429ff60eb3d75690a, type: 3}
+  retryIfNotGood: 0
+  resetTimerOnLeave: 0
+  introDialogs:
+  - subtitles: "Hol\xE0 l\u2019ami, quelle plaisante journ\xE9e ! Sois ma muse et
+      inspire-moi de tes dons octroy\xE9s par les dieux."
+    clip: {fileID: 8300000, guid: 46aab7c11082a7f4da2dbe98a3836f4e, type: 3}
+  potionDialog:
+    subtitles: "Puis-je avoir de l\u2019entourloupe en bouteille."
+    clip: {fileID: 8300000, guid: a1b7c4e6bec34ff4d9d63f2031fe42a9, type: 3}
+  notAPotionDialog:
+  - subtitles: Boom !
+    clip: {fileID: 8300000, guid: 332ccfef2dd14d1409af3453c4ba5964, type: 3}
+  wrongPotionDialog:
+  - subtitles: "Argh, chercherais-tu \xE0 nuire \xE0 mon succ\xE8s ? Je ne chanterai
+      pas pour toi, vile cr\xE9ature !"
+    clip: {fileID: 8300000, guid: 2554a7f1079dc3d429641e5ff051c7c6, type: 3}
+  goodPotionDialog:
+  - subtitles: "Je te remercie l\u2019ami. Ma prochaine ode sera en ton honneur !"
+    clip: {fileID: 8300000, guid: a96a36d924a720542978c3e609a7d0fb, type: 3}
+  linkedRecipe: {fileID: 11400000, guid: f64d519c75f17904ca9ca2b33cde330f, type: 2}
