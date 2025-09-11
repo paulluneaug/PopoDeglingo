@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Grimoire_BG_0: -1244136133340381539
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
