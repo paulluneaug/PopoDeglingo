@@ -9,9 +9,9 @@ using UnityUtility.Extensions;
 public class GrimoireManager : MonoBehaviour
 {
     [Title("Inputs")]
-    [SerializeField] private InputActionReference m_nextPageInput;
-    [SerializeField] private InputActionReference m_previousPageInput;
-    [SerializeField] private InputActionReference m_repeatPageInput;
+    [SerializeField] private VirtualInput m_nextPageInput;
+    [SerializeField] private VirtualInput m_previousPageInput;
+    [SerializeField] private VirtualInput m_repeatPageInput;
 
     [Title("Audio sources")]
     [SerializeField] private AudioSource m_cantFlipPageAudioSource;
@@ -27,9 +27,9 @@ public class GrimoireManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        m_nextPageInput.action.performed += OnNextPagePerformed;
-        m_previousPageInput.action.performed += OnPreviousPagePerformed;
-        m_repeatPageInput.action.performed += OnReapeatPagePerformed;
+        m_nextPageInput.OnInputValueChanged += OnNextPagePerformed;
+        m_previousPageInput.OnInputValueChanged += OnPreviousPagePerformed;
+        m_repeatPageInput.OnInputValueChanged += OnReapeatPagePerformed;
 
         m_pages.ForEach(page => page.Hide());
 
@@ -39,9 +39,9 @@ public class GrimoireManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        m_nextPageInput.action.performed -= OnNextPagePerformed;
-        m_previousPageInput.action.performed -= OnPreviousPagePerformed;
-        m_repeatPageInput.action.performed -= OnReapeatPagePerformed;
+        m_nextPageInput.OnInputValueChanged -= OnNextPagePerformed;
+        m_previousPageInput.OnInputValueChanged -= OnPreviousPagePerformed;
+        m_repeatPageInput.OnInputValueChanged -= OnReapeatPagePerformed;
     }
 
     private void ChangePage(int offset)
@@ -60,18 +60,30 @@ public class GrimoireManager : MonoBehaviour
 
     }
 
-    private void OnPreviousPagePerformed(InputAction.CallbackContext context)
+    private void OnPreviousPagePerformed(bool state)
     {
+        if (!state)
+        {
+            return;
+        }
         ChangePage(-1);
     }
 
-    private void OnNextPagePerformed(InputAction.CallbackContext context)
+    private void OnNextPagePerformed(bool state)
     {
+        if (!state)
+        {
+            return;
+        }
         ChangePage(1);
     }
 
-    private void OnReapeatPagePerformed(InputAction.CallbackContext context)
+    private void OnReapeatPagePerformed(bool state)
     {
+        if (!state)
+        {
+            return;
+        }
         m_pages[m_currentPage].Repeat();
     }
 
