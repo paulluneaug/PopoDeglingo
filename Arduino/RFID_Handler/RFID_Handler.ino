@@ -1,11 +1,18 @@
 #include <MFRC522.h>
 #include <SPI.h>
 
-#define DEBUG true
+#define DEBUG false
 
 #pragma region Variables & Constantes
 // RFID Reader handler.
 MFRC522 rfidReader;
+
+const byte BUTTON_STATE_HEADER = 0;
+const int BUFFER_SIZE = 256;
+
+int m_wroteBytes = 0;
+byte m_writeBuffer[BUFFER_SIZE];
+
 // Pins used by the library.
 const int RST_PIN = 9;
 const int SS_PIN = 10;
@@ -27,7 +34,7 @@ const String targetUIDs[]
 };
 const int NB_INGREDIENTS = 12;
 // Current ingredient placed uppon the reader.
-String currentUID = "";
+int currentUIDIdx = 0;
 
 const int UID_SIZE = 4;
 const unsigned long noCardDelay = 100; 
@@ -70,19 +77,20 @@ void loop()
     }*/
   #endif
 
+  m_wroteBytes = 0;
+
   readUID();
 
-  if(millis() - lastCardTime > noCardDelay)
+  if(millis() - lastCardTime > noCardDelay && currentUIDIdx != -1)
   {
-    currentUID = "";
+    SendButtonState(currentUIDIdx,false);
+    currentUIDIdx = -1;
     #if DEBUG
-      Serial.println("No Card : ");
+      Serial.println("No Card ! ");
     #endif
   }
 
-  // Arrêt de la lecture.
-  //rfidReader.PICC_HaltA();
-  //rfidReader.PCD_StopCrypto1();
+  SendDataIfNeeded();
 }
 
 void readUID()
@@ -95,20 +103,41 @@ void readUID()
   uid.toUpperCase();
   
   lastCardTime = millis();
-  if(currentUID == uid) return;
-  currentUID = uid;
-
+  int idx;
+  for(int i=0; i<NB_INGREDIENTS; ++i) 
+  {
+    if(targetUIDs[i] == uid) 
+    {
+      idx = i;
+      break;
+    }
+  }
+  if(idx == currentUIDIdx) return;
+  currentUIDIdx = idx;
   #if DEBUG
     Serial.print("Card idx: ");
-    for(int i=0; i<NB_INGREDIENTS; ++i) 
-    {
-      if(targetUIDs[i] == currentUID) 
-      {
-        Serial.println(i);
-        break;
-      }
-    }
+    Serial.println(idx);
+    Serial.println(currentUIDIdx);
     Serial.print("Card uid: ");
     Serial.println(uid);
   #endif
+  SendButtonState(idx, true);
+}
+
+void SendDataIfNeeded()
+{
+  #if !DEBUG
+  if (m_wroteBytes != 0)
+  {
+    Serial.write(m_writeBuffer, m_wroteBytes);
+  }
+  #endif
+  
+}
+
+void SendButtonState(byte buttonIndex, bool state)
+{
+  m_writeBuffer[m_wroteBytes++] = BUTTON_STATE_HEADER;
+  m_writeBuffer[m_wroteBytes++] = buttonIndex;
+  m_writeBuffer[m_wroteBytes++] = state ? 1 : 0;
 }
