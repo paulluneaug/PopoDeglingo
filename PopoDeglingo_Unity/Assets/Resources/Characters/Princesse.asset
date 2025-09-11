@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 13
   CharacterName: Princesse
-  CharacterSprite: {fileID: 283988907511131584, guid: ff0d6623e43c3534f8ff10cbab49c498, type: 3}
+  CharacterSprite: {fileID: 5212479821597309559, guid: 106c98820da6a014c819010740fdc818, type: 3}
   retryIfNotGood: 0
   resetTimerOnLeave: 0
   introDialogs:

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 4
   CharacterName: Folle
-  CharacterSprite: {fileID: -3558552238673493281, guid: 04c88b11ebed26e4d9b828dd9c232dff, type: 3}
+  CharacterSprite: {fileID: 5212479821597309559, guid: 106c98820da6a014c819010740fdc818, type: 3}
   retryIfNotGood: 0
   resetTimerOnLeave: 0
   introDialogs:
