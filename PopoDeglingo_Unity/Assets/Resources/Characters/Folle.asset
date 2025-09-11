@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf34bac6eea9764c9dd632516e3c0ba, type: 3}
+  m_Name: Folle
+  m_EditorClassIdentifier: 
+  ID: 4
+  CharacterName: Folle
+  CharacterSprite: {fileID: -3558552238673493281, guid: 04c88b11ebed26e4d9b828dd9c232dff, type: 3}
+  retryIfNotGood: 0
+  resetTimerOnLeave: 0
+  introDialogs:
+  - subtitles: "C\u2019est donc ici qu\u2019on peut faire exploser des choses ? J\u2019ai
+      dit explos\xE9 ? Je voulais dire explorer !"
+    clip: {fileID: 8300000, guid: 664d8599b517e744fbc08c08d1cab259, type: 3}
+  potionDialog:
+    subtitles: Donnez moi la POPO DEGLINGO
+    clip: {fileID: 8300000, guid: 32bf7408df498da4697dd1a317465008, type: 3}
+  notAPotionDialog:
+  - subtitles: Boom !
+    clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
+  wrongPotionDialog:
+  - subtitles: "Mais.. il ne se passe rien ? Encore un foutu saint d\u2019esprit
+      qui m\u2019emp\xEAche d\u2019agir\u2026"
+    clip: {fileID: 8300000, guid: 90ebeb237f05b2e40b150319166f2ced, type: 3}
+  goodPotionDialog:
+  - subtitles: "Oh oui !!! \xC0 moi la puissance !!! Je voulais dire la prestance"
+    clip: {fileID: 8300000, guid: 2a0c378a12223da4bb4f84a4f9ebcfdb, type: 3}
+  linkedRecipe: {fileID: 11400000, guid: b78a36fbc52fa47408ae66fa464dc9f3, type: 2}

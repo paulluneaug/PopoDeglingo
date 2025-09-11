@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf34bac6eea9764c9dd632516e3c0ba, type: 3}
+  m_Name: Courtisan
+  m_EditorClassIdentifier: 
+  ID: 2
+  CharacterName: Courtisan
+  CharacterSprite: {fileID: -5198404524020431775, guid: aea930e4236a1a6429ff60eb3d75690a, type: 3}
+  retryIfNotGood: 0
+  resetTimerOnLeave: 0
+  introDialogs:
+  - subtitles: Oh ! Ce saligot a agrandi mes pieds ! Je ne peux plus mettre mes souliers.
+    clip: {fileID: 8300000, guid: 3714f5e0395e41948b9ab0593736b4bc, type: 3}
+  potionDialog:
+    subtitles: "Je veux me venger, il me de l\u2019entourloupe en bouteille"
+    clip: {fileID: 8300000, guid: e6404ce5e691c344eb7f795677b742cf, type: 3}
+  notAPotionDialog:
+  - subtitles: Boom 1
+    clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
+  wrongPotionDialog:
+  - subtitles: "Mais que diantre me donnez vous l\xE0 ! Vous venez de perdre un client
+      ! J\u2019irais chez le p\xE8re Carrouf"
+    clip: {fileID: 8300000, guid: 0826d560b10fa7447b5c299af70d9389, type: 3}
+  goodPotionDialog:
+  - subtitles: Tu ne paies rien pour attendre Gontran ! Ma vengeance sera terrible
+      !
+    clip: {fileID: 8300000, guid: 0d02a92a8dc896042bf19c03ff0f3c06, type: 3}
+  linkedRecipe: {fileID: 11400000, guid: f64d519c75f17904ca9ca2b33cde330f, type: 2}

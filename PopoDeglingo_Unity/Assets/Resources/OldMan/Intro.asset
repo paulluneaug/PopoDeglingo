@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf34bac6eea9764c9dd632516e3c0ba, type: 3}
+  m_Name: Intro
+  m_EditorClassIdentifier: 
+  ID: 0
+  CharacterName: Vieux
+  CharacterSprite: {fileID: -3558552238673493281, guid: 04c88b11ebed26e4d9b828dd9c232dff, type: 3}
+  retryIfNotGood: 1
+  resetTimerOnLeave: 1
+  introDialogs:
+  - subtitles: "Ah mon petit marcassin, tu es d\xE9j\xE0 l\xE0 ! Tr\xE8s bien, tr\xE8s
+      bien,"
+    clip: {fileID: 8300000, guid: ed84d09e63d37b140895c8d49022238a, type: 3}
+  - subtitles: Tu vas pouvoir tenir ma boutique en mon absence. Le conseil druidique
+      ne durera pas longtemps.
+    clip: {fileID: 8300000, guid: f65e5cc0c9474ea4f8094d05826f00c1, type: 3}
+  - subtitles: "Oui, oui, je sais. J\u2019ai 345 ans mais la retraite est pass\xE9e
+      \xE0 350 ans. "
+    clip: {fileID: 8300000, guid: 7d02cd645ab59ae4c9f8bbacca63111b, type: 3}
+  - subtitles: "Je sais que je peux te faire confiance\u2026  CEPENDANT ! Mon petit
+      marcassin, nous allons pr\xE9parer une potion ensemble pour voir si tu seras
+      \xE0 la hauteur. "
+    clip: {fileID: 8300000, guid: 5549086ac37c9834688e748236691009, type: 3}
+  potionDialog:
+    subtitles: "Nous allons faire ma fameuse Popo D\xE9glingo, ma sp\xE9cialit\xE9,
+      je dirais m\xEAme mon chef-d'\u0153uvre."
+    clip: {fileID: 8300000, guid: 8f88f21a294b2bf4bb83461ec0338c8c, type: 3}
+  notAPotionDialog:
+  - subtitles: 'Kaboum >: ('
+    clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
+  wrongPotionDialog:
+  - subtitles: "Pas \xE7a"
+    clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
+  goodPotionDialog:
+  - subtitles: Adieux
+    clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
+  linkedRecipe: {fileID: 11400000, guid: b78a36fbc52fa47408ae66fa464dc9f3, type: 2}

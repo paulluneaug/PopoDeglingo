@@ -35,12 +35,16 @@ public class PotionRecipe : ScriptableObject
 public enum IngredientType
 {
 	NOTHING,
-	TEST1,
-	TEST2,
-	TEST3,
-	TEST4,
-
-	TEST5,
-
-	TEST6
+	HONEY,
+	CHOCOLATE,
+	VINEGAR,
+	COFFEE,
+	PEPPER,
+	GARLIC,
+	CURRY,
+	CINNAMON,
+	SOAP,
+	LAVENDER,
+	GRENADINE,
+	MINT
 }

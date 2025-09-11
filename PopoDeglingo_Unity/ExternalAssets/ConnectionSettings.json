@@ -1,0 +1,6 @@
+{
+    "ConnectorsToUse" : 2,
+    "SerialPort0" : "COM9",
+    "SerialPort1" : "COM4",
+    "SerialPort2" : "COM5"
+}

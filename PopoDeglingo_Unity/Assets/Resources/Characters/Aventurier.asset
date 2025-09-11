@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf34bac6eea9764c9dd632516e3c0ba, type: 3}
+  m_Name: Aventurier
+  m_EditorClassIdentifier: 
+  ID: 1
+  CharacterName: Aventurier
+  CharacterSprite: {fileID: 2575966596581722498, guid: 665e6ad590b76bd4684145dd746adf9e, type: 3}
+  retryIfNotGood: 0
+  resetTimerOnLeave: 0
+  introDialogs:
+  - subtitles: "Je parcours ce monde de long en large. Je cherche ce donjon depuis
+      si longtemps ! Le tr\xE9sor ! La gloire !"
+    clip: {fileID: 8300000, guid: 4c230a57849741b48ab24bfc0537911c, type: 3}
+  potionDialog:
+    subtitles: "Il me faut\u2026 de l\u2019omniscience limit\xE9e"
+    clip: {fileID: 8300000, guid: d0ec54869faf7f8478c7595b5b188173, type: 3}
+  notAPotionDialog:
+  - subtitles: Boom !
+    clip: {fileID: 8300000, guid: 332ccfef2dd14d1409af3453c4ba5964, type: 3}
+  wrongPotionDialog:
+  - subtitles: "Je ne suis pas sur que c'\xE9tait ce que je voulais. Mais pas de
+      soucis, je pourrais la revendre"
+    clip: {fileID: 8300000, guid: f9b19c30f71eda3479a36466adcaa56f, type: 3}
+  goodPotionDialog:
+  - subtitles: "A moi la montagne oubli\xE9e"
+    clip: {fileID: 8300000, guid: ee1be9d2ad2c65641bb36a3b101068bc, type: 3}
+  linkedRecipe: {fileID: 11400000, guid: da39c4b5816e7c04ebbe3ef58a5bc02e, type: 2}

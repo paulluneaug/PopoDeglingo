@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf34bac6eea9764c9dd632516e3c0ba, type: 3}
+  m_Name: Fourbe
+  m_EditorClassIdentifier: 
+  ID: 5
+  CharacterName: Fourbe
+  CharacterSprite: {fileID: 283988907511131584, guid: ff0d6623e43c3534f8ff10cbab49c498, type: 3}
+  retryIfNotGood: 0
+  resetTimerOnLeave: 0
+  introDialogs:
+  - subtitles: Bonsoir cher ami.
+    clip: {fileID: 8300000, guid: cae4ebdbb2e3b85429ff8c388097f7a8, type: 3}
+  potionDialog:
+    subtitles: "C\u2019est un peu d\xE9licat, j\u2019aimerai\u2026\u2026 du concentr\xE9
+      de stress"
+    clip: {fileID: 8300000, guid: 2a0c378a12223da4bb4f84a4f9ebcfdb, type: 3}
+  notAPotionDialog:
+  - subtitles: Boom !
+    clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
+  wrongPotionDialog:
+  - subtitles: "Tr\xE8s cher\u2026 c\u2019est\u2026 lamentable"
+    clip: {fileID: 8300000, guid: 004e071d3378ef34d83e274c6dd4fa23, type: 3}
+  goodPotionDialog:
+  - subtitles: "Oooohhhh\u2026 Vous n\u2019imaginez pas les hauteurs qui me sont
+      d\xE9sormais accessibles. Mille mercis."
+    clip: {fileID: 8300000, guid: e9971ecdeebb169488d0d62ddb34c451, type: 3}
+  linkedRecipe: {fileID: 11400000, guid: aac80fc1e858e814d94f71c9da16e785, type: 2}

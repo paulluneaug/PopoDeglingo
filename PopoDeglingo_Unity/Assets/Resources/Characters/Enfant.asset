@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf34bac6eea9764c9dd632516e3c0ba, type: 3}
+  m_Name: Enfant
+  m_EditorClassIdentifier: 
+  ID: 3
+  CharacterName: Enfant
+  CharacterSprite: {fileID: -5198404524020431775, guid: aea930e4236a1a6429ff60eb3d75690a, type: 3}
+  retryIfNotGood: 0
+  resetTimerOnLeave: 0
+  introDialogs:
+  - subtitles: "Ma maman m\u2019a dit que c\u2019\xE9tait ici pour les potions."
+    clip: {fileID: 8300000, guid: 40a74181d70fda74facf7a93065f74a0, type: 3}
+  potionDialog:
+    subtitles: "C\u2019est quoi le concentr\xE9 de stress ? Ma maman elle veut \xE7a
+      !"
+    clip: {fileID: 8300000, guid: 6be8e1a644eab12479963ce56632aece, type: 3}
+  notAPotionDialog:
+  - subtitles: Boom !
+    clip: {fileID: 8300000, guid: 332ccfef2dd14d1409af3453c4ba5964, type: 3}
+  wrongPotionDialog:
+  - subtitles: "T\u2019es trop nul, je vais m\u2019acheter des bonbons \xE0 la place
+      !"
+    clip: {fileID: 8300000, guid: ce5215136dd26c54ca5ff7db54c8fbe9, type: 3}
+  goodPotionDialog:
+  - subtitles: Merci !!!!
+    clip: {fileID: 8300000, guid: 08cc76882aad26e478235e74b39893e8, type: 3}
+  linkedRecipe: {fileID: 11400000, guid: aac80fc1e858e814d94f71c9da16e785, type: 2}

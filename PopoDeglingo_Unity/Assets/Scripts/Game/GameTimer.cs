@@ -26,6 +26,10 @@ public class GameTimer
         m_callback = callback;
     }
 
+    /// <summary>
+    /// Updates the timer
+    /// </summary>
+    /// <param name="deltaTime">The current deltatime</param>
     public void Update(float deltaTime)
     {
         if (m_running)
@@ -34,7 +38,7 @@ public class GameTimer
             if (m_timer <= 0)
             {
                 m_running = false;
-                m_callback.Invoke();
+                if (m_callback != null) m_callback.Invoke();
             }
         }
     }
