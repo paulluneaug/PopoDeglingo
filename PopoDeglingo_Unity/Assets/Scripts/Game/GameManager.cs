@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 /// <summary>
 /// Handles the game logic
@@ -17,6 +18,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private CharacterData oldManDataIntro;
     [SerializeField] private CharacterData oldManDataOutro;
+
+    [SerializeField] private IngredientManager m_ingredientsManager;
+    [SerializeField] private InputActionReference m_startGameInput;
+    [SerializeField] private InputActionReference m_replayVoiceInput;
 
 
     private bool m_running = false;
@@ -47,6 +52,25 @@ public class GameManager : MonoBehaviour
         m_allCharacters = new List<CharacterData>(Resources.LoadAll<CharacterData>("Characters/"));
 
         m_gameTimer = new GameTimer(0, null);
+
+        m_startGameInput.action.performed += OnStartGamePerformed;
+        m_replayVoiceInput.action.performed += OnReplayVoicePerformed;
+    }
+
+    private void OnDestroy()
+    {
+        m_startGameInput.action.performed -= OnStartGamePerformed;
+        m_replayVoiceInput.action.performed -= OnReplayVoicePerformed;
+    }
+
+    private void OnStartGamePerformed(InputAction.CallbackContext context)
+    {
+        StartGame();
+    }
+
+    private void OnReplayVoicePerformed(InputAction.CallbackContext context)
+    {
+        RedoVoice();
     }
 
     /// <summary>
@@ -379,7 +403,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-#if UNITY_EDITOR
+#if UNITY_EDITOR && false
         if (Input.GetKeyDown(KeyCode.KeypadMinus)) StartGame();
 
         if (Input.GetKeyDown(KeyCode.Keypad1)) ToggleIngredient(IngredientType.HONEY, true);
@@ -418,6 +442,8 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.KeypadPlus)) ToggleIngredient(IngredientType.MINT, true);
         else if (Input.GetKeyUp(KeyCode.KeypadPlus)) ToggleIngredient(IngredientType.MINT, false);
 #endif
+
+        m_currentIngredients = m_ingredientsManager.CurrentIngredients;
 
         if (!m_running) { return; }
 
