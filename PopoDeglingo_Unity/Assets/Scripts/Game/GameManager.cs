@@ -143,10 +143,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void StartEnd()
     {
-        if (m_cutscene != null)
-        {
-            StopAllCoroutines();
-        }
+        StopAllCoroutines();
 
         m_canCheckPotions = false;
         m_cutscene = StartCoroutine(Routine_BringInEnd(oldManDataOutro));
@@ -216,7 +213,7 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(data.introDialogs[i].clip.length); // Change for clip length later
         }
 
-        m_cutscene = null;
+        m_running = false;
     }
 
     /// <summary>
