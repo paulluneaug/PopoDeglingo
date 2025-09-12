@@ -31,8 +31,10 @@ public class VirtualInput : ScriptableObject
     {
         while (m_inputQueue.Count > 0)
         {
-            OnInputValueChanged?.Invoke(m_inputQueue.Dequeue());
-        }
+            bool input = m_inputQueue.Dequeue();
+            Debug.Log($"Sending {input}");
+            OnInputValueChanged?.Invoke(input);
+        }   
     }
 
     public void Dispose()
