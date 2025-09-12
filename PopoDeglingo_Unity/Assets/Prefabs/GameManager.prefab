@@ -57,7 +57,7 @@ MonoBehaviour:
   m_dialogText: {fileID: 7806528996564075163}
   customerSource: {fileID: 2147206422888527995}
   oldManDataIntro: {fileID: 11400000, guid: 070054fa1dd48a549b0b8a796f3d0552, type: 2}
-  oldManDataOutro: {fileID: 0}
+  oldManDataOutro: {fileID: 11400000, guid: 7b40d3f89acf8384f8566b1cf2d60b24, type: 2}
   m_ingredientsManager: {fileID: 3413928648785445976}
   m_startGameInput: {fileID: -3375313492914613129, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_replayVoiceInput: {fileID: -7889261664554825048, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
@@ -84,7 +84,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: 0
+  Pan2D: -1
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0

@@ -158,6 +158,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5996327164772559028}
     m_Modifications:
+    - target: {fileID: 523392059389283658, guid: 38689abce09e94a44b54a1b91620a6a2, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 7aacbbd6896eb4c4fb6c756effe199ce, type: 3}
+    - target: {fileID: 523392059389283658, guid: 38689abce09e94a44b54a1b91620a6a2, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7aacbbd6896eb4c4fb6c756effe199ce, type: 3}
     - target: {fileID: 3750477877240883249, guid: 38689abce09e94a44b54a1b91620a6a2, type: 3}
       propertyPath: m_text
       value: Potion 3
@@ -332,6 +340,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5996327164772559028}
     m_Modifications:
+    - target: {fileID: 523392059389283658, guid: 38689abce09e94a44b54a1b91620a6a2, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: de8322b3f1f667b49a29c3459420a84b, type: 3}
+    - target: {fileID: 523392059389283658, guid: 38689abce09e94a44b54a1b91620a6a2, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: de8322b3f1f667b49a29c3459420a84b, type: 3}
     - target: {fileID: 3750477877240883249, guid: 38689abce09e94a44b54a1b91620a6a2, type: 3}
       propertyPath: m_text
       value: Potion 0
@@ -486,6 +502,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5996327164772559028}
     m_Modifications:
+    - target: {fileID: 523392059389283658, guid: 38689abce09e94a44b54a1b91620a6a2, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: eac62e9002cef844582de655f85c4644, type: 3}
+    - target: {fileID: 523392059389283658, guid: 38689abce09e94a44b54a1b91620a6a2, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: eac62e9002cef844582de655f85c4644, type: 3}
     - target: {fileID: 3750477877240883249, guid: 38689abce09e94a44b54a1b91620a6a2, type: 3}
       propertyPath: m_text
       value: Potion 2
@@ -660,6 +684,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5996327164772559028}
     m_Modifications:
+    - target: {fileID: 523392059389283658, guid: 38689abce09e94a44b54a1b91620a6a2, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: a59b7ea081644d6468146a9debb99df1, type: 3}
+    - target: {fileID: 523392059389283658, guid: 38689abce09e94a44b54a1b91620a6a2, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a59b7ea081644d6468146a9debb99df1, type: 3}
     - target: {fileID: 3750477877240883249, guid: 38689abce09e94a44b54a1b91620a6a2, type: 3}
       propertyPath: m_text
       value: 'Potion 1

@@ -61,11 +61,11 @@ MonoBehaviour:
     subtitles: Maintenant prends le grimoire et fais moi une Popo Deglingo !
     clip: {fileID: 8300000, guid: f0b083b3f2d04bf4d9a39860a5dafef9, type: 3}
   notAPotionDialog:
-  - subtitles: 'Kaboum >: ('
-    clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
+  - subtitles: Attention ! Ne fais pas tout exploser.
+    clip: {fileID: 8300000, guid: 1171e33ab641387449f70b3978070137, type: 3}
   wrongPotionDialog:
-  - subtitles: "Pas \xE7a"
-    clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
+  - subtitles: "Tu es bien s\xFBr ? "
+    clip: {fileID: 8300000, guid: ae9b84ffc5bca254b97146e1f6c9e2d0, type: 3}
   goodPotionDialog:
   - subtitles: Ah ! Je vois que ma boutique est entre de bonnes mains !
     clip: {fileID: 8300000, guid: 0b7913d826b6e7b42b1472e1688912c6, type: 3}
