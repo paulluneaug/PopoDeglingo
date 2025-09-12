@@ -21,7 +21,7 @@ MonoBehaviour:
   - subtitles: Oh ! Ce saligot a agrandi mes pieds ! Je ne peux plus mettre mes souliers.
     clip: {fileID: 8300000, guid: 3714f5e0395e41948b9ab0593736b4bc, type: 3}
   potionDialog:
-    subtitles: "Je veux me venger, il me de l\u2019entourloupe en bouteille"
+    subtitles: "Je veux me venger, il me faut de l\u2019entourloupe en bouteille"
     clip: {fileID: 8300000, guid: e6404ce5e691c344eb7f795677b742cf, type: 3}
   notAPotionDialog:
   - subtitles: Boom 1

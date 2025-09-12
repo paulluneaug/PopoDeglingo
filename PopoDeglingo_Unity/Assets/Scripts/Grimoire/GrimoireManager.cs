@@ -36,7 +36,7 @@ public class GrimoireManager : MonoBehaviour
         m_pages.ForEach(page => page.Hide());
 
         m_currentPage = m_startPage;
-        m_pages[m_currentPage].Show();
+        m_pages[m_currentPage].Show(false);
     }
 
     private void OnDestroy()

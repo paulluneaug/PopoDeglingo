@@ -8,10 +8,13 @@ public class GrimoirePage : MonoBehaviour
     [SerializeField] private AudioSource m_audioSource;
     [SerializeField] private CanvasGroup m_canvasGroup;
 
-    public void Show()
+    public void Show(bool playAudio = true)
     {
         ShowCanvas();
-        StartAudio();
+        if (playAudio)
+        {
+            StartAudio();
+        }
     }
 
     public void Hide()
