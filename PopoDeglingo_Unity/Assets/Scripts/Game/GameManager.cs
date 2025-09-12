@@ -210,10 +210,10 @@ public class GameManager : MonoBehaviour
         m_characterSprite.sprite = data.CharacterSprite;
         m_characterAnimator.SetTrigger("In");
 
-        for (int i = 0; i < m_currentCharacter.introDialogs.Length; i++)
+        for (int i = 0; i < data.introDialogs.Length; i++)
         {
-            PlayDialog(m_currentCharacter.introDialogs[i]);
-            yield return new WaitForSeconds(m_currentCharacter.introDialogs[i].clip.length); // Change for clip length later
+            PlayDialog(data.introDialogs[i]);
+            yield return new WaitForSeconds(data.introDialogs[i].clip.length); // Change for clip length later
         }
 
         m_cutscene = null;
@@ -230,10 +230,20 @@ public class GameManager : MonoBehaviour
         m_characterSprite.sprite = m_currentCharacter.CharacterSprite;
         m_characterAnimator.SetTrigger("In");
 
+
         for (int i = 0; i < m_currentCharacter.introDialogs.Length; i++)
         {
             PlayDialog(m_currentCharacter.introDialogs[i]);
-            yield return new WaitForSeconds(m_currentCharacter.introDialogs[i].clip.length); // Change for clip length later
+            float timer = 0.0f;
+            while (timer < m_currentCharacter.introDialogs[i].clip.length)
+            {
+                if (m_replayVoiceInput.action.IsPressed())
+                {
+                    break;
+                }
+                timer += Time.deltaTime;
+                yield return null;
+            }
         }
 
         PlayDialog(m_currentCharacter.potionDialog, true);
