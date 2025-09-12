@@ -10,7 +10,7 @@ MFRC522 rfidReader;
 const byte BUTTON_STATE_HEADER = 0;
 const int BUFFER_SIZE = 256;
 
-int m_wroteBytes = 0;
+int m_writtenBytes = 0;
 byte m_writeBuffer[BUFFER_SIZE];
 
 // Pins used by the library.
@@ -31,6 +31,12 @@ const String targetUIDs[]
   "FFF8B6D", // La fausire 9
   "FFF896D", // Ponce 10
   "FFF8C6D", // Le dinolézore 11
+};
+const String ingredientNames[]
+{
+  "Gazon", "Mousse dégueu", "Crépon/canelle", "Papier bulle", "Papier d'Ail-lu", 
+  "La corde", "Pilou-pilou", "Simili-cuir", "Sac de billes", "La fausire", "Ponce",
+  "Le dinolézore"
 };
 const int NB_INGREDIENTS = 12;
 // Current ingredient placed uppon the reader.
@@ -59,25 +65,7 @@ void setup()
 
 void loop() 
 {
-  #if DEBUG
-    /*if(currentUID == "")
-    {
-      bool ln = false;
-      if(rfidReader.PICC_IsNewCardPresent()) 
-      {
-        Serial.print("New card present");
-        ln =true;
-      }
-      if(rfidReader.PICC_ReadCardSerial())
-      {
-        Serial.print("Can read the ouad");
-        ln = true;
-      } 
-      if(ln)Serial.println();
-    }*/
-  #endif
-
-  m_wroteBytes = 0;
+  m_writtenBytes = 0;
 
   readUID();
 
@@ -116,8 +104,7 @@ void readUID()
   currentUIDIdx = idx;
   #if DEBUG
     Serial.print("Card idx: ");
-    Serial.println(idx);
-    Serial.println(currentUIDIdx);
+    Serial.println(ingredientNames[idx]);
     Serial.print("Card uid: ");
     Serial.println(uid);
   #endif
@@ -127,9 +114,9 @@ void readUID()
 void SendDataIfNeeded()
 {
   #if !DEBUG
-  if (m_wroteBytes != 0)
+  if (m_writtenBytes != 0)
   {
-    Serial.write(m_writeBuffer, m_wroteBytes);
+    Serial.write(m_writeBuffer, m_writtenBytes);
   }
   #endif
   
@@ -137,7 +124,7 @@ void SendDataIfNeeded()
 
 void SendButtonState(byte buttonIndex, bool state)
 {
-  m_writeBuffer[m_wroteBytes++] = BUTTON_STATE_HEADER;
-  m_writeBuffer[m_wroteBytes++] = buttonIndex;
-  m_writeBuffer[m_wroteBytes++] = state ? 1 : 0;
+  m_writeBuffer[m_writtenBytes++] = BUTTON_STATE_HEADER;
+  m_writeBuffer[m_writtenBytes++] = buttonIndex;
+  m_writeBuffer[m_writtenBytes++] = state ? 1 : 0;
 }
