@@ -18,23 +18,48 @@ MonoBehaviour:
   retryIfNotGood: 1
   resetTimerOnLeave: 1
   introDialogs:
-  - subtitles: "Ah mon petit marcassin, tu es d\xE9j\xE0 l\xE0 ! Tr\xE8s bien, tr\xE8s
-      bien,"
-    clip: {fileID: 8300000, guid: ed84d09e63d37b140895c8d49022238a, type: 3}
-  - subtitles: Tu vas pouvoir tenir ma boutique en mon absence. Le conseil druidique
-      ne durera pas longtemps.
-    clip: {fileID: 8300000, guid: f65e5cc0c9474ea4f8094d05826f00c1, type: 3}
+  - subtitles: "Ah mon petit marcassin, tu es d\xE9j\xE0 l\xE0 !"
+    clip: {fileID: 8300000, guid: 4472c7577270384418e6196a1d033584, type: 3}
+  - subtitles: "Tr\xE8s bien, tr\xE8s bien, tu vas pouvoir tenir ma boutique en mon
+      absence. Le conseil druidique ne durera pas longtemps."
+    clip: {fileID: 8300000, guid: fe2bb78d939605140afba92d83063475, type: 3}
   - subtitles: "Oui, oui, je sais. J\u2019ai 345 ans mais la retraite est pass\xE9e
-      \xE0 350 ans. "
-    clip: {fileID: 8300000, guid: 7d02cd645ab59ae4c9f8bbacca63111b, type: 3}
-  - subtitles: "Je sais que je peux te faire confiance\u2026  CEPENDANT ! Mon petit
-      marcassin, nous allons pr\xE9parer une potion ensemble pour voir si tu seras
-      \xE0 la hauteur. "
-    clip: {fileID: 8300000, guid: 5549086ac37c9834688e748236691009, type: 3}
-  potionDialog:
-    subtitles: "Nous allons faire ma fameuse Popo D\xE9glingo, ma sp\xE9cialit\xE9,
+      \xE0 350 ans. Je sais que je peux te faire confiance\u2026"
+    clip: {fileID: 8300000, guid: d6e88e36142fe73478befb1ca4babe3b, type: 3}
+  - subtitles: "CEPENDANT ! Mon petit marcassin, nous allons pr\xE9parer une potion
+      ensemble pour voir si tu seras \xE0 la hauteur."
+    clip: {fileID: 8300000, guid: 52a347d59cc2a9c4a839b9c6336a91d5, type: 3}
+  - subtitles: "Sans tarder, nous allons faire ma fameuse Popo D\xE9glingo, ma sp\xE9cialit\xE9,
       je dirais m\xEAme mon chef-d'\u0153uvre."
-    clip: {fileID: 8300000, guid: 8f88f21a294b2bf4bb83461ec0338c8c, type: 3}
+    clip: {fileID: 8300000, guid: 7f7521a421b159247924994186a9a851, type: 3}
+  - subtitles: 'Mais avant cela, un petit rappel de comment marchent les affaires
+      : '
+    clip: {fileID: 8300000, guid: 6bff4088486f8734c8f186d8e17d49a5, type: 3}
+  - subtitles: "En face de toi, l\xE0 o\xF9 je me trouve, arriveront les clients"
+    clip: {fileID: 8300000, guid: 6dbd46b2488111949bfdda6e817fcc1f, type: 3}
+  - subtitles: "Ils te demanderont tous une potion, \xE0 toi de r\xE9pondre \xE0
+      leur demande"
+    clip: {fileID: 8300000, guid: 459504289e4e247479f7fc182c4d5fa0, type: 3}
+  - subtitles: "Pour conna\xEEtre la recette, utilise le grimoire \xE0 ta droite."
+    clip: {fileID: 8300000, guid: 7f8275f82026e8f4e8061a88b92f8694, type: 3}
+  - subtitles: "Avec les boutons situ\xE9s aux extr\xE9mit\xE9s tu peux faire d\xE9filer
+      les recettes, pour r\xE9\xE9couter utilise le bouton central."
+    clip: {fileID: 8300000, guid: fbd3e304a263d624197abc9d38f8eea6, type: 3}
+  - subtitles: "Pour r\xE9\xE9couter utilise le bouton central."
+    clip: {fileID: 8300000, guid: 1adcb18918afc7d438980eb85e4ece21, type: 3}
+  - subtitles: "\xC0 ta gauche se trouvent les ingr\xE9dients, tu peux les identifier
+      \xE0 l\u2019odeur ou \xE0 la texture"
+    clip: {fileID: 8300000, guid: 608c4ea0ea47058428df3d9dbf05d1ad, type: 3}
+  - subtitles: "Enfin, place les 3 bons ingr\xE9dients sur les pi\xE9destaux, devant
+      toi.  La recette est valid\xE9e d\xE8s que 3 ingr\xE9dients sont d\xE9pos\xE9s,
+      donc fais bien attention ! "
+    clip: {fileID: 8300000, guid: edcb2c2c04cf39847bbbce7ccbd1c673, type: 3}
+  - subtitles: "Ensuite tu n'as qu\u2019\xE0 ranger les ingr\xE9dients et un autre
+      client arrivera."
+    clip: {fileID: 8300000, guid: c84627fbff8957646abb6941cbfac230, type: 3}
+  potionDialog:
+    subtitles: Maintenant prends le grimoire et fais moi une Popo Deglingo !
+    clip: {fileID: 8300000, guid: f0b083b3f2d04bf4d9a39860a5dafef9, type: 3}
   notAPotionDialog:
   - subtitles: 'Kaboum >: ('
     clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
@@ -42,6 +67,15 @@ MonoBehaviour:
   - subtitles: "Pas \xE7a"
     clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
   goodPotionDialog:
-  - subtitles: Adieux
-    clip: {fileID: 8300000, guid: 46b9aaae6813a7f4d8efedefeda0d838, type: 3}
+  - subtitles: Ah ! Je vois que ma boutique est entre de bonnes mains !
+    clip: {fileID: 8300000, guid: 0b7913d826b6e7b42b1472e1688912c6, type: 3}
+  - subtitles: "Mais attention, si tu fais une potion qui n\u2019existe pas, on ne
+      sait pas ce qui peut se passer. "
+    clip: {fileID: 8300000, guid: ac528d2053cb4284487930ffb2878268, type: 3}
+  - subtitles: "Et encore pire ! Si tu leur fais la mauvaise, nous n\u2019aurons
+      AUCUN denier !"
+    clip: {fileID: 8300000, guid: 8f545cfe056861b49a658150e17b69e8, type: 3}
+  - subtitles: "Je pars, petit marcassin. Je reviendrais peut-\xEAtre ou jamais !
+      On sait pas ! Au revoir ! Au revoir ! "
+    clip: {fileID: 8300000, guid: bce27473fd17a3240a88a62863e2cbba, type: 3}
   linkedRecipe: {fileID: 11400000, guid: b78a36fbc52fa47408ae66fa464dc9f3, type: 2}
