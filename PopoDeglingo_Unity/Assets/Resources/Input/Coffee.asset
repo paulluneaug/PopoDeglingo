@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8beb292fa2b973549a6e152b73d6b4df, type: 3}
   m_Name: Coffee
   m_EditorClassIdentifier: 
-  m_action: {fileID: 2633136102562653127, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_action: {fileID: 4133350767171138001, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_actionState: 0
+  m_arduinoState: 0
