@@ -15,11 +15,13 @@ MonoBehaviour:
   ID: 0
   CharacterName: Vieux
   CharacterSprite: {fileID: -3558552238673493281, guid: 04c88b11ebed26e4d9b828dd9c232dff, type: 3}
-  retryIfNotGood: 1
-  resetTimerOnLeave: 1
+  retryIfNotGood: 0
+  resetTimerOnLeave: 0
   introDialogs:
-  - subtitles: 
-    clip: {fileID: 0}
+  - subtitles: "C\u2019est moi ! Je suis de retour, petit marcassin ! Oui je sais,
+      j\u2019\xE9tais cens\xE9 partir plusieurs jours mais ces feignasses de gnomes
+      ont bloqu\xE9 la for\xEAt, je ne passais pas !"
+    clip: {fileID: 8300000, guid: d38ee012036fbaa48929775d4a58eb8e, type: 3}
   potionDialog:
     subtitles: "C\u2019est moi ! Je suis de retour, petit marcassin ! Oui je sais,
       j\u2019\xE9tais cens\xE9 partir plusieurs jours mais ces feignasses de gnomes
