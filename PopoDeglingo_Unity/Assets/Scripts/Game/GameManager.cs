@@ -230,6 +230,7 @@ public class GameManager : MonoBehaviour
         m_characterSprite.sprite = m_currentCharacter.CharacterSprite;
         m_characterAnimator.SetTrigger("In");
 
+        bool skipGotReleased = !m_replayVoiceInput.action.IsPressed();
 
         for (int i = 0; i < m_currentCharacter.introDialogs.Length; i++)
         {
@@ -239,7 +240,14 @@ public class GameManager : MonoBehaviour
             {
                 if (m_replayVoiceInput.action.IsPressed())
                 {
-                    break;
+                    if (skipGotReleased)
+                    {
+                        break;
+                    }
+                }
+                else
+                {
+                    skipGotReleased = true;
                 }
                 timer += Time.deltaTime;
                 yield return null;
