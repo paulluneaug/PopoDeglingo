@@ -4,6 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityUtility.Extensions;
 
 /// <summary>
 /// Handles the game logic
@@ -55,6 +56,8 @@ public class GameManager : MonoBehaviour
 
         m_startGameInput.action.performed += OnStartGamePerformed;
         m_replayVoiceInput.action.performed += OnReplayVoicePerformed;
+
+        Display.displays.ForEach(display => display.Activate());
     }
 
     private void OnDestroy()

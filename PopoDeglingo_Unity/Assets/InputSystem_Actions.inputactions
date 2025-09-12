@@ -75,7 +75,7 @@
                 {
                     "name": "",
                     "id": "d292e046-8958-4057-9cd5-5760d59c6c83",
-                    "path": "<HID::Arduino LLC Arduino Leonardo>/button2",
+                    "path": "<Joystick>/trigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -97,7 +97,7 @@
                 {
                     "name": "",
                     "id": "8d4e6556-d895-4dfe-bc51-a509a69e6aea",
-                    "path": "<HID::Arduino LLC Arduino Leonardo>/trigger",
+                    "path": "<HID::Arduino LLC Arduino Leonardo>/button2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -119,7 +119,7 @@
                 {
                     "name": "",
                     "id": "7e12cda5-cfaf-43f5-aa5f-46144b6f1f2c",
-                    "path": "<HID::Arduino LLC Arduino Leonardo>/button4",
+                    "path": "<HID::Arduino LLC Arduino Leonardo>/button3",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -140,8 +140,30 @@
                 },
                 {
                     "name": "",
+                    "id": "e5794263-0599-410c-bbd8-6847cbf7adb6",
+                    "path": "<HID::Arduino LLC Arduino Leonardo>/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Customer_Replay",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "bbc22163-14e4-4854-a9e2-5ac48c144391",
                     "path": "<Keyboard>/numpadMinus",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StartGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "37c67488-3f05-4484-8925-7870f5a1f839",
+                    "path": "<HID::Arduino LLC Arduino Leonardo>/button4",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
