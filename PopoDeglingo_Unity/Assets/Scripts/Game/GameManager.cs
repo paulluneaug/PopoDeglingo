@@ -68,6 +68,10 @@ public class GameManager : MonoBehaviour
 
     private void OnStartGamePerformed(InputAction.CallbackContext context)
     {
+        if (m_running) 
+        { 
+            return; 
+        }
         StartGame();
     }
 
@@ -114,7 +118,10 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void RedoVoice()
     {
-        if (m_cachedDialog != null && m_canCheckPotions) PlayDialog(m_cachedDialog);
+        if (m_cachedDialog != null && m_canCheckPotions)
+        {
+            PlayDialog(m_cachedDialog);
+        }
     }
 
     /// <summary>
@@ -446,6 +453,11 @@ public class GameManager : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.KeypadPlus)) ToggleIngredient(IngredientType.MINT, false);
 #endif
 
+
+        if (!m_running) { return; }
+
+        m_gameTimer.Update(Time.deltaTime);
+
         m_currentIngredients = m_ingredientsManager.CurrentIngredients;
         if (m_canCheckPotions) { CheckPotion(); }
         if (m_awaitingCleaning && CurrentIngredientsAreAllEmpty())
@@ -453,9 +465,5 @@ public class GameManager : MonoBehaviour
             m_awaitingCleaning = false;
             BringNextClient();
         }
-
-        if (!m_running) { return; }
-
-        m_gameTimer.Update(Time.deltaTime);
     }
 }
