@@ -61,7 +61,7 @@ public class VirtualInput : ScriptableObject
 
         if (currentState != newState)
         {
-            m_inputQueue.Enqueue(currentState);
+            m_inputQueue.Enqueue(newState);
         }
 
         m_actionState = actionState;
