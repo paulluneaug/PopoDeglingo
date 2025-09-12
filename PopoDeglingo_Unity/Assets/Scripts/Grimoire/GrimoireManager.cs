@@ -15,6 +15,8 @@ public class GrimoireManager : MonoBehaviour
 
     [Title("Audio sources")]
     [SerializeField] private AudioSource m_cantFlipPageAudioSource;
+    [SerializeField] private AudioSource m_flipPageRightAudioSource;
+    [SerializeField] private AudioSource m_flipPageLeftAudioSource;
 
     [Title("Settings")]
     [Button(nameof(GetAllPages))]
@@ -54,7 +56,16 @@ public class GrimoireManager : MonoBehaviour
             return;
         }
 
-        m_pages[m_currentPage].Hide();
+        if (offset > 0)
+        {
+            m_flipPageRightAudioSource.Play();
+        }
+        else
+        {
+            m_flipPageLeftAudioSource.Play();
+        }
+
+            m_pages[m_currentPage].Hide();
         m_currentPage = newPage;
         m_pages[m_currentPage].Show();
 
