@@ -104,7 +104,6 @@ public class ArduinoConnector
 
                 try
                 {
-
                     OnMessageRecieved?.Invoke(this, m_buffer, readBytesCount);
                 }
                 catch (Exception e) 
