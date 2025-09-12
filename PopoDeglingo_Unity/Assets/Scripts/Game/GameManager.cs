@@ -447,6 +447,12 @@ public class GameManager : MonoBehaviour
 #endif
 
         m_currentIngredients = m_ingredientsManager.CurrentIngredients;
+        if (m_canCheckPotions) { CheckPotion(); }
+        if (m_awaitingCleaning && CurrentIngredientsAreAllEmpty())
+        {
+            m_awaitingCleaning = false;
+            BringNextClient();
+        }
 
         if (!m_running) { return; }
 
